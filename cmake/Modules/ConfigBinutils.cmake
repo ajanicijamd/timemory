@@ -75,7 +75,7 @@ externalproject_add(
     binutils-external
     PREFIX ${PROJECT_BINARY_DIR}/external/binutils
     URL
-        ${BINUTILS_DOWNLOAD_URL}
+        ${TIMEMORY_BINUTILS_DOWNLOAD_URL}
         http://ftpmirror.gnu.org/gnu/binutils/binutils-2.40.tar.gz
         http://mirrors.kernel.org/sourceware/binutils/releases/binutils-2.40.tar.gz
     BUILD_IN_SOURCE 1
