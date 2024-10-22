@@ -181,7 +181,7 @@ target_link_directories(
 target_link_libraries(
     timemory-libunwind
     INTERFACE
-        $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/external/libunwind/install/${CMAKE_DEFAULT_INSTALL_LIBDIR}/libunwind${CMAKE_SHARED_LIBRARY_SUFFIX}>
+        $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/external/libunwind/install/${CMAKE_INSTALL_LIBDIR}/libunwind${CMAKE_SHARED_LIBRARY_SUFFIX}>
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/timemory/libunwind/libunwind${CMAKE_SHARED_LIBRARY_SUFFIX}>
     )
 timemory_target_compile_definitions(timemory-libunwind INTERFACE TIMEMORY_USE_LIBUNWIND
